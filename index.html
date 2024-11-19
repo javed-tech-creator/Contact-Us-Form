@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+     <!-- css  -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- font cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .card1{
+            height: 500px;
+            width: 400px;
+            background-color: #bc3578;
+        }
+        .card2{
+            height: 500px;
+            width: 450px;
+        }
+        .circle{
+            height: 50px;
+            width: 50px;
+        }
+        .hvr:hover{
+            cursor: pointer;
+            background-color: red;
+            color: red;
+        }
+        input{
+            outline: none;
+            /* height: 40px; */
+            background: transparent;
+          
+        }
+        button{
+            background-color: #bc3578;
+        }
+        @media screen and (max-width:900px) {
+           .flex-md{
+            flex-direction: column;
+
+           }
+           .card2{
+            width: 400px;
+        }    
+
+        }
+
+        @media screen and (max-width:768px) {
+           .flex-md{
+            flex-direction: column;
+
+           }
+           .card2{
+            width: 400px;
+        }    
+        .m-t{
+                margin-top: 7px;
+            }
+        }
+
+        @media screen and (max-width:412px) {
+            .card1{
+           
+            width: 380px;
+            background-color: #bc3578;
+        }
+        .card2{
+           
+            width: 380px;
+        }
+        .circle{
+            height: 45px;
+            width: 45px;
+        }
+
+        .mt{
+            margin-top: 7px;
+
+        }
+
+
+        }
+
+       
+    </style>
+</head>
+<body>
+
+    <div class="container" style="height: 100vh;">
+        <h2 class="text-center">Contact Us</h2>
+        <p class="text-center">Any question or marks? Just write us a message!</p>
+        <div class="mt-5 mt d-flex justify-content-center ">
+        <div class="flex-md p-3 d-flex gap-2 bg-body-tertiary justify-content-center">
+
+           <!-- card1  -->
+
+            <div class="card1 p-4 text-white  position-relative overflow-hidden ">
+                <h5>Contact Information</h5>
+                <p class="w-75">Write your message and we will get back to you sonn</p>
+                <p class="mt-5"><i class="fa-solid fa-phone-volume"></i><span class="ms-3"> +10123456789</span></p>
+                <p class="mt-4"><i class="fa-solid fa-envelope"></i><span class="ms-3">demo123@gmail.com</span></p>
+                <p class="mt-4 w-75"><i class="fa-solid fa-location-dot"></i><span class="ms-3">132 Dharmaouth Street jankipuram lucknow Uttar Pardesh</span></p>
+
+                <div class=" d-flex gap-2  position-absolute   bottom-0 start-25 mb-4  ">
+                    <p class="circle hvr rounded-circle bg-dark d-flex align-items-center justify-content-center"><i class="fa-brands fa-twitter"></i></p>
+                    <p class="circle hvr rounded-circle bg-dark d-flex align-items-center justify-content-center"><i class="fa-brands fa-instagram"></i></p>
+                    <p class="circle hvr rounded-circle bg-dark d-flex align-items-center justify-content-center"><i class="fa-brands fa-facebook"></i></p>
+                    <p class="circle hvr rounded-circle bg-dark d-flex align-items-center justify-content-center"><i class="fa-brands fa-linkedin"></i></p>
+                </div>
+
+                <div class="rounded-circle bg-dark  position-absolute top-100 start-100 translate-middle " style="height: 300px;width: 300px;"></div>
+
+                <div class="rounded-circle bg-white position-absolute opacity-25 bottom-0 end-0 mb-5 me-5 " style="height: 100px;width: 100px;"></div>
+
+            </div>
+
+            <!-- card2  -->
+
+            <div class="card2 ps-3 bg-white">
+                <form>
+                    <div class="row mt-5">
+                        <div class="col-md-6 ">
+                            <label>First Name</label>
+                          <input class="border-0 border-bottom outline-none mt-2" type="text" class="form-control "  aria-label="First name">
+                        </div>
+                        <div class="col-md-6 m-t">
+                            <label>Last Name</label>
+                          <input class="border-0 border-bottom outline-none mt-2" type="text" class="form-control" aria-label="Last name">
+                        </div>
+
+                        <div class="col-md-6 mt-4">
+                            <label>Email</label>
+                          <input class="border-0 border-bottom outline-none mt-2" type="text" class="form-control"  aria-label="First name">
+                        </div>
+                        <div class="col-md-6 mt-4">
+                            <label>Phone Number</label>
+                          <input class="border-0 border-bottom outline-none mt-2" type="text" class="form-control" aria-label="Last name">
+                        </div>
+
+                        <div class="col-md-12 mt-4">
+                            <label>Select Subject?</label>
+                        </div>
+                            <div class="d-flex mt-2 gap-2">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                <label class="form-check-label" for="inlineRadio1">General Enquiry</label>
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                <label class="form-check-label" for="inlineRadio2">Product Enquiry</label>
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                <label class="form-check-label" for="inlineRadio2">Feedback</label>
+                              </div>
+
+                              <div class="col-md-6 mt-4">
+                                <label>Message</label>
+                        
+                            </div>
+                            <div class="col-md-12 ">
+                               
+                              <input class="border-0 border-bottom outline-none mt-2" type="text" class="form-control" placeholder="Write  your message" aria-label="First name" style="width: 90%;">
+                            </div>   
+                      </div>
+                      <div class="text-end ">
+                      <button type="submit" class="btn btn-primary mt-3 me-4" style="background-color: #bc3578; outline: none;">Send Message</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+
+    
+</body>
+</html>
